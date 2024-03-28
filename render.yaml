@@ -1,0 +1,10 @@
+services:
+  - name: Iris-Classifier
+    type: web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    github:
+      branch: main  # Change this to your desired branch name
+      repo: Bharat-Intern  # Your GitHub repository name
+      path: Iris-Classifier  # Path to the folder you want to deploy
